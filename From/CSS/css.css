@@ -1,0 +1,22 @@
+.form{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-first-side{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+.form-second-side{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 300px;
+}
+
+.is-hidden{
+    display: none;
+}

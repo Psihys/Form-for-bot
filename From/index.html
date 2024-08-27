@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Css/css.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose catagory</h1>
+    <form  action="">
+        <label for="catagory">Completyushie</label>
+        <select id="catagory" name="catagory">
+            <option value="System unit">System unit</option>
+            <option value="Perferiy">Perferiy</option>
+          </select>
+    </form>
+
+    <button class="is-hidden" id="periphery">Periphery</button>
+    <button class="is-hidden" id="mouse">Mouse</button>
+    <button class="is-hidden" id="eybord">Keybord</button>
+
+    <div class="is-hidden">
+        <h2>Mouse</h2>
+        <form class="form " action="">
+            <div class="form-first-side">
+            <label for="mousemerk">Choose a mouse merk:</label>
+            <input type="text" name="mousemerk">
+            
+            <label for="mouseinterface">Choose a mouse interface type:</label>
+    <select id="mouse-interface" name="mouseinterface">
+        <option value="wired">Wired</option>
+        <option value="wireless">Wireless</option>
+        <option value="rf">RF (Radio Frequency)</option>
+        <option value="infrared">Infrared</option>
+    </select>
+    
+            <label for="mousedpi">Choose a mouse DPI setting:</label>
+            <select id="mousedpi" name="mousedpi">
+                <option value="800">800 DPI</option>
+                <option value="1600">1600 DPI</option>
+                <option value="3200">3200 DPI</option>
+                <option value="6400">6400 DPI</option>
+            </select>
+            </div>
+            <div class="form-second-side">
+                <label for="mouseconnection">Choose a mouse connection type:</label>
+    <select id="mouseconnection" name="mouseconnection">
+        <option value="usb">USB</option>
+        <option value="bluetooth">Bluetooth</option>
+        <option value="wireless">Wireless (with receiver)</option>
+        <option value="ps2">PS/2</option>
+    </select>
+                <label for="mousesensor">Choose a mouse sensor type:</label>
+    <select id="mousesensor" name="mousesensor">
+      <option value="optical">Optical</option>
+      <option value="laser">Laser</option>
+      <option value="trackball">Trackball</option>
+      <option value="infrared">Infrared</option>
+    </select>
+    
+    <label for="mousebuttons">Choose the number of mouse buttons:</label>
+    <select id="mousebuttons" name="mousebuttons">
+      <option value="2">2 Buttons</option>
+      <option value="3">3 Buttons</option>
+      <option value="5">5 Buttons</option>
+      <option value="7">7 Buttons</option>
+      <option value="9">9 Buttons</option>
+    </select>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="./Script/Console-info/script.js"></script>
+</body>
+</html>
