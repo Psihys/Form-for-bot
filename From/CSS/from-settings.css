@@ -1,6 +1,6 @@
 .form{
     width: 800px;
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }

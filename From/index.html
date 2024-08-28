@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./Css/css.css" >
+    <link rel="stylesheet" href="./Css/from-settings.css" >
+    <link rel="stylesheet" href="./Css/backround.css" >
+    <link rel="stylesheet" href="./Css/text.css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <h1>Choose catagory</h1>
-    <form  action="">
+    <form class="first-form "  action="">
         <label for="catagory">Completyushie</label>
         <select id="catagory" name="catagory">
             <option value="System unit">System unit</option>
@@ -16,12 +18,16 @@
           </select>
     </form>
 
+
     <button class="is-hidden" id="periphery">Periphery</button>
     <button class="is-hidden" id="mouse">Mouse</button>
     <button class="is-hidden" id="eybord">Keybord</button>
 
-    <div class="is-hidden">
+
+
+    <div class="">
         <h2>Mouse</h2>
+        <h3>Main characteristics</h3>
         <form class="form " action="">
             <div class="form-first-side">
             <label for="mousemerk">Choose a mouse merk:</label>
@@ -69,8 +75,300 @@
     </select>
             </div>
         </form>
+       
+    </div>
+
+
+    <div>
+        <h2>Keyboard</h2>
+        <h3>Main characteristics</h3>
+        <form class="form " action="">
+            <div class="form-first-side">
+            <label for="mousemerk">Choose a mouse merk:</label>
+            <input type="text" name="mousemerk">
+
+            <select id="keyboard-type" name="keyboard_type">
+                <option value="mechanical">Mechanical</option>
+                <option value="membrane">Membrane</option>
+                <option value="optical">Optical</option>
+                <option value="scissor-switch">Scissor-Switch</option>
+            </select>
+
+
+        <label for="keyboard-size">Size of Keyboard:</label>
+        <select id="keyboard-size" name="keyboard_size">
+            <option value="full-size">Full-Size</option>
+            <option value="tenkeyless">Tenkeyless (TKL)</option>
+            <option value="75%">75%</option>
+            <option value="60%">60%</option>
+            <option value="40%">40%</option>
+        </select>
+
+            </div>
+            <div class="form-second-side">
+                <label for="connection-type">Type of Connection:</label>
+                <select id="connection-type" name="connection_type">
+                    <option value="wired">Wired</option>
+                    <option value="wireless">Wireless</option>
+                    <option value="bluetooth">Bluetooth</option>
+                </select>
+        
+                <label for="charge-type">Charge Type:</label>
+                <select id="charge-type" name="charge_type">
+                    <option value="usb-c">USB-C</option>
+                    <option value="micro-usb">Micro-USB</option>
+                    <option value="aa-batteries">AA Batteries</option>
+                    <option value="aaa-batteries">AAA Batteries</option>
+                </select>
+            </div>
+        </form>
+
+
+        <h3>Specification</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="additional-buttons">Additional Buttons:</label>
+                <select id="additional-buttons" name="additional_buttons">
+                    <option value="none">None</option>
+                    <option value="media-controls">Media Controls</option>
+                    <option value="macro-keys">Macro Keys</option>
+                    <option value="programmable-keys">Programmable Keys</option>
+                </select>
+
+                <label>RGB Lighting:</label>
+                <div>
+                <input type="radio" id="rgbYes" name="rgbLighting" value="yes">
+                <label for="rgbYes">Yes</label>
+                </div>
+                <div>
+                <input type="radio" id="rgbNo" name="rgbLighting" value="no">
+                <label for="rgbNo">No</label>
+                </div>
+
+            </div>
+
+            <div class="form-second-side">
+                  <label>RGB Lighting for buttons:</label>
+                <div>
+                <input type="radio" id="rgbYes" name="rgbLighting" value="yes">
+                <label for="rgbYes">Yes</label>
+                </div>
+                <div>
+                <input type="radio" id="rgbNo" name="rgbLighting" value="no">
+                <label for="rgbNo">No</label>
+                </div>
+                <label>Water Protection:</label>
+                <div>
+                <input type="radio" id="waterYes" name="waterProtection" value="yes">
+                <label for="waterYes">Yes</label>
+                </div>
+                <div>
+                <input type="radio" id="waterNo" name="waterProtection" value="no">
+                <label for="waterNo">No</label>
+                </div>
+            </div>
+        </form>
+        <h3>Additional information</h3>
+        <form class="form" action="">
+            <div class="form-first-side"> 
+                <label for="">Cable length</label>
+                <p>1.8m</p>
+            </div>
+            <div class="form-second-side">
+                <label>Keyboard pad</label>
+                <p>Eng/RU/UKR</p>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="">
+        <h2>Monitor</h2>
+        <h3>Main characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="monitormerk">Choose a monitor brand:</label>
+                <input type="text" name="monitormerk">
+    
+                <label for="monitorsize">Choose a monitor size:</label>
+                <select id="monitorsize" name="monitorsize">
+                    <option value="19">19 inches</option>
+                    <option value="21.5">21.5 inches</option>
+                    <option value="24">24 inches</option>
+                    <option value="27">27 inches</option>
+                    <option value="32">32 inches</option>
+                </select>
+    
+                <label for="monitorresolution">Choose a monitor resolution:</label>
+                <select id="monitorresolution" name="monitorresolution">
+                    <option value="1080p">1080p (Full HD)</option>
+                    <option value="1440p">1440p (Quad HD)</option>
+                    <option value="4k">4K (Ultra HD)</option>
+                    <option value="5k">5K</option>
+                    <option value="8k">8K</option>
+                </select>
+    
+                <label for="monitortype">Choose a monitor panel type:</label>
+                <select id="monitortype" name="monitortype">
+                    <option value="ips">IPS</option>
+                    <option value="tn">TN</option>
+                    <option value="va">VA</option>
+                    <option value="oled">OLED</option>
+                </select>
+    
+                <label for="monitormatrix">Choose a monitor matrix type:</label>
+                <select id="monitormatrix" name="monitormatrix">
+                    <option value="lcd">LCD</option>
+                    <option value="led">LED</option>
+                    <option value="plasma">Plasma</option>
+                    <option value="crt">CRT</option>
+                </select>
+    
+                <label for="monitorsurface">Choose a screen surface type:</label>
+                <select id="monitorsurface" name="monitorsurface">
+                    <option value="matte">Matte</option>
+                    <option value="glossy">Glossy</option>
+                </select>
+            </div>
+    
+            <div class="form-second-side">
+                <label for="monitorcontrast">Choose a contrast ratio:</label>
+                <input type="text" id="monitorcontrast" name="monitorcontrast" placeholder="e.g., 1000:1">
+    
+                <label for="monitorangle">Choose a viewing angle:</label>
+                <input type="text" id="monitorangle" name="monitorangle" placeholder="e.g., 178°">
+    
+                <label for="monitorresponse">Choose a response time:</label>
+                <input type="text" id="monitorresponse" name="monitorresponse" placeholder="e.g., 1ms">
+    
+                <label for="monitorbrightness">Choose a brightness level:</label>
+                <input type="text" id="monitorbrightness" name="monitorbrightness" placeholder="e.g., 300 cd/m²">
+    
+                <label for="monitorrefresh">Choose a refresh rate:</label>
+                <select id="monitorrefresh" name="monitorrefresh">
+                    <option value="60hz">60 Hz</option>
+                    <option value="75hz">75 Hz</option>
+                    <option value="120hz">120 Hz</option>
+                    <option value="144hz">144 Hz</option>
+                    <option value="240hz">240 Hz</option>
+                    <option value="360hz">360 Hz</option>
+                </select>
+    
+                <label for="monitorsync">Choose a monitor sync technology:</label>
+                <select id="monitorsync" name="monitorsync">
+                    <option value="none">None</option>
+                    <option value="freesync">FreeSync</option>
+                    <option value="gsync">G-Sync</option>
+                </select>
+    
+                <label for="monitorports">Choose the number of monitor ports:</label>
+                <select id="monitorports" name="monitorports">
+                    <option value="hdmi">1 HDMI</option>
+                    <option value="hdmi-2">2 HDMI</option>
+                    <option value="dp">1 DisplayPort</option>
+                    <option value="dp-2">2 DisplayPorts</option>
+                    <option value="usb-c">1 USB-C</option>
+                    <option value="usb-c-2">2 USB-C</option>
+                </select>
+            </div>
+        </form>
+        <div>
+            <h3>Ports</h3>
+            <form class="form" action="">
+                <div class="form-first-side">
+                    <label for="d-sub">D-sub</label>
+                    <input type="number" name="d-sub">
+                    <label for="HDMI">HDMI</label>
+                    <input type="number" name="HDMI">
+                </div>
+                <div class="form-second-side">
+                    <label for="DVI">DVI</label>
+                    <input type="number" name="DVI">
+                    <label for="DisplayPort">Display Port</label>
+                    <input type="number" name="DisplayPort">
+                </div>
+            </form>
+        </div>
+        
     </div>
     
+
+    <div>
+        <h2>Headphones</h2>
+        <h3>Main characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="headphonebrand">Choose a headphone brand:</label>
+                <input type="text" name="headphonebrand">
+        
+                <label for="headphoneinterface">Choose a headphone interface type:</label>
+                <select id="headphone-interface" name="headphoneinterface">
+                    <option value="wired">Wired</option>
+                    <option value="wireless">Wireless</option>
+                    <option value="bluetooth">Bluetooth</option>
+                    <option value="rf">RF (Radio Frequency)</option>
+                </select>
+        
+                <label for="headphonefrequency">Choose a headphone frequency range:</label>
+                <select id="headphonefrequency" name="headphonefrequency">
+                    <option value="20-20k">20 Hz - 20 kHz</option>
+                    <option value="10-22k">10 Hz - 22 kHz</option>
+                    <option value="15-25k">15 Hz - 25 kHz</option>
+                    <option value="10-30k">10 Hz - 30 kHz</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="headphonespecialty">Choose the headphone specialty:</label>
+                <select id="headphonespecialty" name="headphonespecialty">
+                    <option value="gaming">Gaming</option>
+                    <option value="music">Music</option>
+                    <option value="studio">Studio/Professional</option>
+                    <option value="general">General Use</option>
+                </select>
+                <label for="headphoneconnection">Choose a headphone connection type:</label>
+                <select id="headphoneconnection" name="headphoneconnection">
+                    <option value="3.5mm">3.5mm Jack</option>
+                    <option value="usb">USB</option>
+                    <option value="bluetooth">Bluetooth</option>
+                    <option value="lightning">Lightning (for iOS devices)</option>
+                </select>
+        
+                <label for="headphonesensitivity">Choose a headphone sensitivity:</label>
+                <select id="headphonesensitivity" name="headphonesensitivity">
+                    <option value="85dB">85 dB</option>
+                    <option value="95dB">95 dB</option>
+                    <option value="105dB">105 dB</option>
+                    <option value="115dB">115 dB</option>
+                </select>
+            </div>
+        </form>
+        
+        <h3>Microphone</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label>Additional microphone:</label>
+                <div>
+                <input type="radio" id="rgbYes" name="rgbLighting" value="yes">
+                <label for="rgbYes">Yes</label>
+                </div>
+                <div>
+                <input type="radio" id="rgbNo" name="rgbLighting" value="no">
+                <label for="rgbNo">No</label>
+                </div>
+            </div>
+            <div  class="form-second-side">
+                <label>Microphone:</label>
+                <div>
+                <input type="radio" id="rgbYes" name="rgbLighting" value="yes">
+                <label for="rgbYes">Yes</label>
+                </div>
+                <div>
+                <input type="radio" id="rgbNo" name="rgbLighting" value="no">
+                <label for="rgbNo">No</label>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <script src="./Script/Console-info/script.js"></script>
 </body>
