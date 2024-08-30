@@ -508,6 +508,498 @@
         </form>
     </div>
     
+    <!-- Motherboard -->
+    <div class="form-section">
+        <h2>Motherboard</h2>
+        <h3>Main characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="motherboardbrand">Choose a motherboard brand:</label>
+                <input type="text" name="motherboardbrand">
+                
+                <label for="motherboardsocket">Choose a socket type:</label>
+                <input type="text" name="motherboardsocket">
+        
+                <label for="motherboardchipset">Choose a chipset:</label>
+                <input type="text" name="motherboardchipset">
+            </div>
+            <div class="form-second-side">
+                <label for="motherboardplatform">Choose a platform:</label>
+                <select id="motherboardplatform" name="motherboardplatform">
+                    <option value="intel">Intel</option>
+                    <option value="amd">AMD</option>
+                </select>
+    
+                <label for="motherboardformfactor">Choose a form factor:</label>
+                <select id="motherboardformfactor" name="motherboardformfactor">
+                    <option value="atx">ATX</option>
+                    <option value="microatx">Micro ATX</option>
+                    <option value="miniatx">Mini ATX</option>
+                    <option value="eatatx">EATX</option>
+                    <option value="miniitx">Mini ITX</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Category</h3>
+        <form class="form" action="">
+            <label for="motherboardcategory">Choose a category:</label>
+            <input type="text" name="motherboardcategory">
+        </form>
+    
+        <h3>RAM Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="ramtype">Choose the type of RAM:</label>
+                <select id="ramtype" name="ramtype">
+                    <option value="ddr3">DDR3</option>
+                    <option value="ddr4">DDR4</option>
+                    <option value="ddr5">DDR5</option>
+                </select>
+        
+                <label for="ramfrequency">Choose the max RAM frequency:</label>
+                <select id="ramfrequency" name="ramfrequency">
+                    <option value="2400">2400 MHz</option>
+                    <option value="3200">3200 MHz</option>
+                    <option value="3600">3600 MHz</option>
+                    <option value="4000">4000 MHz</option>
+                    <option value="4800">4800 MHz</option>
+                    <option value="5200">5200 MHz</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="ramslots">Choose the number of RAM slots:</label>
+                <select id="ramslots" name="ramslots">
+                    <option value="2">2 Slots</option>
+                    <option value="4">4 Slots</option>
+                    <option value="6">6 Slots</option>
+                    <option value="8">8 Slots</option>
+                </select>
+    
+                <label for="ramstorage">Choose the max RAM storage capacity:</label>
+                <select id="ramstorage" name="ramstorage">
+                    <option value="32">32 GB</option>
+                    <option value="64">64 GB</option>
+                    <option value="128">128 GB</option>
+                    <option value="256">256 GB</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Video Output Types</h3>
+        <form class="form" action="">
+            <div class="form-second-side">
+                <input type="checkbox" id="vga" name="videooutput" value="vga">
+                <label for="vga">VGA</label>
+        
+                <input type="checkbox" id="hdmi" name="videooutput" value="hdmi">
+                <label for="hdmi">HDMI</label>
+        
+                <input type="checkbox" id="dvi" name="videooutput" value="dvi">
+                <label for="dvi">DVI</label>
+        
+                <input type="checkbox" id="displayport" name="videooutput" value="displayport">
+                <label for="displayport">DisplayPort</label>
+            </div>
+        </form>
+    
+        <h3>Network Options</h3>
+        <form class="form" action="">
+            <div class="form-second-side">
+                <input type="checkbox" id="lan" name="networkoption" value="lan">
+                <label for="lan">LAN</label>
+        
+                <input type="checkbox" id="wifi" name="networkoption" value="wifi">
+                <label for="wifi">Wi-Fi</label>
+        
+                <input type="checkbox" id="bluetooth" name="networkoption" value="bluetooth">
+                <label for="bluetooth">Bluetooth</label>
+            </div>
+        </form>
+    
+        <h3>Storage Options</h3>
+        <form class="form" action="">
+            <div class="form-second-side">
+                <input type="checkbox" id="sata" name="storageoption" value="sata">
+                <label for="sata">SATA</label>
+    
+                <input type="checkbox" id="m2" name="storageoption" value="m2">
+                <label for="m2">M.2</label>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Cooler -->
+    <div class="form-section">
+        <h2>Cooler</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="coolerbrand">Choose a cooler brand:</label>
+                <input type="text" name="coolerbrand">
+                
+                <label for="tubeamount">Choose the number of tubes:</label>
+                <select id="tubeamount" name="tubeamount">
+                    <option value="2">2 Tubes</option>
+                    <option value="4">4 Tubes</option>
+                    <option value="6">6 Tubes</option>
+                    <option value="8">8 Tubes</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="coolingtype">Choose the type of cooling:</label>
+                <select id="coolingtype" name="coolingtype">
+                    <option value="air">Air Cooling</option>
+                    <option value="liquid">Liquid Cooling</option>
+                    <option value="hybrid">Hybrid Cooling</option>
+                </select>
+    
+                <label for="coolersocket">Choose socket compatibility:</label>
+                <input type="text" name="coolersocket">
+            </div>
+        </form>
+    
+        <h3>Category</h3>
+        <form class="form" action="">
+            <label for="coolercategory">Choose a category:</label>
+            <input type="text" name="coolercategory">
+        </form>
+    
+        <h3>Fan Specifications</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="fandiameter">Choose the diameter of the fan:</label>
+                <select id="fandiameter" name="fandiameter">
+                    <option value="80">80 mm</option>
+                    <option value="92">92 mm</option>
+                    <option value="120">120 mm</option>
+                    <option value="140">140 mm</option>
+                    <option value="200">200 mm</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="fanspeed">Choose the max fan speed:</label>
+                <select id="fanspeed" name="fanspeed">
+                    <option value="1000">1000 RPM</option>
+                    <option value="1500">1500 RPM</option>
+                    <option value="2000">2000 RPM</option>
+                    <option value="2500">2500 RPM</option>
+                    <option value="3000">3000 RPM</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Additional Specifications</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="maxtdp">Choose the max TDP:</label>
+                <select id="maxtdp" name="maxtdp">
+                    <option value="95">95 W</option>
+                    <option value="125">125 W</option>
+                    <option value="150">150 W</option>
+                    <option value="200">200 W</option>
+                    <option value="250">250 W</option>
+                </select>
+                <label for="coolerheight">Enter the cooler height:</label>
+                <input type="text" id="coolerheight" name="coolerheight" placeholder="Height in mm">
+    
+            </div>
+            <div class="form-second-side">
+                
+                <label for="coolercolor">Choose the cooler color:</label>
+                <input type="text" id="coolercolor" name="coolercolor" placeholder="Color">
+            </div>
+        </form>
+    </div>
+    
+    <!-- RAM -->
+    <div class="form-section">
+        <h2>RAM</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="rambrand">Choose a RAM brand:</label>
+                <input type="text" name="rambrand">
+                
+                <label for="ramamount">Choose the amount of RAM:</label>
+                <select id="ramamount" name="ramamount">
+                    <option value="2x4">2x4 GB</option>
+                    <option value="2x8">2x8 GB</option>
+                    <option value="2x16">2x16 GB</option>
+                    <option value="4x8">4x8 GB</option>
+                    <option value="4x16">4x16 GB</option>
+                    <option value="16">16 GB</option>
+                    <option value="32">32 GB</option>
+                    <option value="64">64 GB</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="ramfrequency">Choose the RAM frequency:</label>
+                <select id="ramfrequency" name="ramfrequency">
+                    <option value="2400">2400 MHz</option>
+                    <option value="3200">3200 MHz</option>
+                    <option value="3600">3600 MHz</option>
+                    <option value="4000">4000 MHz</option>
+                    <option value="4800">4800 MHz</option>
+                    <option value="5200">5200 MHz</option>
+                    <option value="6000">6000 MHz</option>
+                </select>
+    
+                <label for="ramtype">Choose the type of RAM:</label>
+                <select id="ramtype" name="ramtype">
+                    <option value="ddr4">DDR4</option>
+                    <option value="ddr5">DDR5</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Additional Specifications</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="rammodules">Choose the number of RAM modules:</label>
+                <select id="rammodules" name="rammodules">
+                    <option value="1">1 Module</option>
+                    <option value="2">2 Modules</option>
+                    <option value="4">4 Modules</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="ramtiming">Enter the RAM timing:</label>
+                <input type="text" id="ramtiming" name="ramtiming" placeholder="e.g., 16-18-18-36">
+            </div>
+        </form>
+    </div>
+    
+    <!-- SSD -->
+    <div class="form-section">
+        <h2>SSD</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="ssdbrand">Choose an SSD brand:</label>
+                <input type="text" name="ssdbrand">
+                
+                <label for="ssdcapacity">Choose the SSD capacity:</label>
+                <select id="ssdcapacity" name="ssdcapacity">
+                    <option value="128">128 GB</option>
+                    <option value="256">256 GB</option>
+                    <option value="512">512 GB</option>
+                    <option value="1024">1 TB</option>
+                    <option value="2048">2 TB</option>
+                    <option value="4096">4 TB</option>
+                </select>
+    
+                <label for="flashcapacity">Enter the flash capacity:</label>
+                <input type="text" id="flashcapacity" name="flashcapacity" placeholder="Flash capacity in GB">
+            </div>
+            <div class="form-second-side">
+                <label for="ssdtype">Choose the SSD type:</label>
+                <select id="ssdtype" name="ssdtype">
+                    <option value="sata">SATA</option>
+                    <option value="nvme">NVMe</option>
+                    <option value="m2">M.2</option>
+                    <option value="pcie">PCIe</option>
+                </select>
+    
+                <label for="ssdinterface">Choose the interface type:</label>
+                <select id="ssdinterface" name="ssdinterface">
+                    <option value="sata3">SATA III</option>
+                    <option value="pcie3">PCIe 3.0</option>
+                    <option value="pcie4">PCIe 4.0</option>
+                    <option value="pcie5">PCIe 5.0</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Performance Specifications</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="readspeed">Enter the read speed:</label>
+                <input type="text" id="readspeed" name="readspeed" placeholder="Read speed in MB/s">
+            </div>
+            <div class="form-second-side">
+                <label for="writespeed">Enter the write speed:</label>
+                <input type="text" id="writespeed" name="writespeed" placeholder="Write speed in MB/s">
+            </div>
+        </form>
+    
+        <h3>Form Factor</h3>
+        <form class="form" action="">
+            <label for="formfactor">Choose the form factor:</label>
+            <select id="formfactor" name="formfactor">
+                <option value="2.5">2.5 inch</option>
+                <option value="3.5">3.5 inch</option>
+                <option value="m2">M.2</option>
+                <option value="u2">U.2</option>
+                <option value="pcie">PCIe Card</option>
+            </select>
+        </form>
+    </div>
+    
+    <!-- HDD -->
+    <div class="form-section">
+        <h2>HDD</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="hddbrand">Choose an HDD brand:</label>
+                <input type="text" name="hddbrand">
+                
+                <label for="hddcapacity">Choose the HDD capacity:</label>
+                <select id="hddcapacity" name="hddcapacity">
+                    <option value="500">500 GB</option>
+                    <option value="1000">1 TB</option>
+                    <option value="2000">2 TB</option>
+                    <option value="4000">4 TB</option>
+                    <option value="8000">8 TB</option>
+                    <option value="12000">12 TB</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="hddrpm">Choose the RPM (Revolutions Per Minute):</label>
+                <select id="hddrpm" name="hddrpm">
+                    <option value="5400">5400 RPM</option>
+                    <option value="7200">7200 RPM</option>
+                    <option value="10000">10,000 RPM</option>
+                </select>
+    
+                <label for="hddinterface">Choose the interface type:</label>
+                <select id="hddinterface" name="hddinterface">
+                    <option value="sata">SATA</option>
+                    <option value="sata2">SATA II</option>
+                    <option value="sata3">SATA III</option>
+                    <option value="sas">SAS</option>
+                </select>
+            </div>
+        </form>
+    
+        <h3>Performance Specifications</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="hddcache">Enter the cache size:</label>
+                <input type="text" id="hddcache" name="hddcache" placeholder="Cache size in MB">
+            </div>
+            <div class="form-second-side">
+                <label for="hddplatter">Enter the number of platters:</label>
+                <input type="text" id="hddplatter" name="hddplatter" placeholder="Number of platters">
+            </div>
+        </form>
+    
+        <h3>Form Factor</h3>
+        <form class="form" action="">
+            <label for="formfactor">Choose the form factor:</label>
+            <select id="formfactor" name="formfactor">
+                <option value="2.5">2.5 inch</option>
+                <option value="3.5">3.5 inch</option>
+            </select>
+        </form>
+    </div>
+    
+    <!-- Charger -->
+    <div class="form-section">
+        <h2>Charger</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="chargerbrand">Choose a charger brand:</label>
+                <input type="text" name="chargerbrand">
+                
+                <label for="poweroutput">Choose the power output:</label>
+                <select id="poweroutput" name="poweroutput">
+                    <option value="5w">5W</option>
+                    <option value="10w">10W</option>
+                    <option value="18w">18W</option>
+                    <option value="30w">30W</option>
+                    <option value="45w">45W</option>
+                    <option value="65w">65W</option>
+                    <option value="100w">100W</option>
+                </select>
+                
+                <label for="connectortype">Choose the connector type:</label>
+                <select id="connectortype" name="connectortype">
+                    <option value="usb-a">USB-A</option>
+                    <option value="usb-c">USB-C</option>
+                    <option value="lightning">Lightning</option>
+                    <option value="micro-usb">Micro-USB</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="compatibility">Enter device compatibility:</label>
+                <input type="text" id="compatibility" name="compatibility" placeholder="Compatible devices or brands">
+                
+                <label for="numberofports">Choose the number of ports:</label>
+                <select id="numberofports" name="numberofports">
+                    <option value="1">1 Port</option>
+                    <option value="2">2 Ports</option>
+                    <option value="3">3 Ports</option>
+                    <option value="4">4 Ports</option>
+                </select>
+    
+                <label for="cablelength">Enter the cable length:</label>
+                <input type="text" id="cablelength" name="cablelength" placeholder="Cable length in meters">
+            </div>
+        </form>
+    </div>
+    
+    <!-- PC case -->
+    <div class="form-section">
+        <h2>PC Case</h2>
+        <h3>Main Characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="casebrand">Choose a PC case brand:</label>
+                <input type="text" name="casebrand">
+                
+                <label for="caseformfactor">Choose the form factor:</label>
+                <select id="caseformfactor" name="caseformfactor">
+                    <option value="atx">ATX</option>
+                    <option value="micro-atx">Micro-ATX</option>
+                    <option value="mini-itx">Mini-ITX</option>
+                    <option value="e-atx">E-ATX</option>
+                    <option value="xl-atx">XL-ATX</option>
+                </select>
+                
+                <label for="casematerial">Choose the material:</label>
+                <select id="casematerial" name="casematerial">
+                    <option value="steel">Steel</option>
+                    <option value="aluminum">Aluminum</option>
+                    <option value="tempered-glass">Tempered Glass</option>
+                    <option value="plastic">Plastic</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="driveslots">Choose the number of drive bays:</label>
+                <select id="driveslots" name="driveslots">
+                    <option value="2">2 Bays</option>
+                    <option value="4">4 Bays</option>
+                    <option value="6">6 Bays</option>
+                    <option value="8">8 Bays</option>
+                    <option value="10">10+ Bays</option>
+                </select>
+    
+                <label for="expansionslots">Choose the number of expansion slots:</label>
+                <select id="expansionslots" name="expansionslots">
+                    <option value="2">2 Slots</option>
+                    <option value="4">4 Slots</option>
+                    <option value="6">6 Slots</option>
+                    <option value="8">8 Slots</option>
+                    <option value="10">10+ Slots</option>
+                </select>
+    
+                <label for="coolingsupport">Choose cooling support:</label>
+                <select id="coolingsupport" name="coolingsupport">
+                    <option value="air">Air Cooling</option>
+                    <option value="liquid">Liquid Cooling</option>
+                    <option value="both">Both</option>
+                    <option value="none">None</option>
+                </select>
+    
+                <label for="casecolor">Choose the color:</label>
+                <input type="text" id="casecolor" name="casecolor" placeholder="Color">
+            </div>
+        </form>
+    </div>
+    
 
     <script src="./Script/Console-info/script.js"></script>
 </body>
