@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/background/backround.css" />
-    <link rel="stylesheet" href="./Css/text/text.css" />
-    <link rel="stylesheet" href="./Css/form-settings/from-settings.css" />
+    <link rel="stylesheet" href="./CSS/text/text.css" />
+    <link rel="stylesheet" href="./CSS/form-settings/from-settings.css" />
     <title>Document</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
     <button class="is-hidden" id="eybord">Keybord</button>
 
 
-
+    <!-- Mouse -->
     <div class="">
         <h2>Mouse</h2>
         <h3>Main characteristics</h3>
@@ -34,12 +34,12 @@
             <input type="text" name="mousemerk">
             
             <label for="mouseinterface">Choose a mouse interface type:</label>
-    <select id="mouse-interface" name="mouseinterface">
-        <option value="wired">Wired</option>
-        <option value="wireless">Wireless</option>
-        <option value="rf">RF (Radio Frequency)</option>
-        <option value="infrared">Infrared</option>
-    </select>
+            <select id="mouse-interface" name="mouseinterface">
+                <option value="wired">Wired</option>
+                <option value="wireless">Wireless</option>
+                <option value="rf">RF (Radio Frequency)</option>
+                <option value="infrared">Infrared</option>
+            </select>
     
             <label for="mousedpi">Choose a mouse DPI setting:</label>
             <select id="mousedpi" name="mousedpi">
@@ -51,12 +51,12 @@
             </div>
             <div class="form-second-side">
                 <label for="mouseconnection">Choose a mouse connection type:</label>
-    <select id="mouseconnection" name="mouseconnection">
-        <option value="usb">USB</option>
-        <option value="bluetooth">Bluetooth</option>
-        <option value="wireless">Wireless (with receiver)</option>
-        <option value="ps2">PS/2</option>
-    </select>
+                <select id="mouseconnection" name="mouseconnection">
+                    <option value="usb">USB</option>
+                    <option value="bluetooth">Bluetooth</option>
+                    <option value="wireless">Wireless (with receiver)</option>
+                    <option value="ps2">PS/2</option>
+                </select>
                 <label for="mousesensor">Choose a mouse sensor type:</label>
     <select id="mousesensor" name="mousesensor">
       <option value="optical">Optical</option>
@@ -78,8 +78,8 @@
        
     </div>
 
-
-    <div>
+        <!-- Keyboard -->
+    <div> 
         <h2>Keyboard</h2>
         <h3>Main characteristics</h3>
         <form class="form " action="">
@@ -181,7 +181,7 @@
         </form>
     </div>
 
-
+    <!-- Monitor -->
     <div class="">
         <h2>Monitor</h2>
         <h3>Main characteristics</h3>
@@ -292,7 +292,7 @@
         
     </div>
     
-
+    <!-- Headphones -->
     <div>
         <h2>Headphones</h2>
         <h3>Main characteristics</h3>
@@ -369,6 +369,145 @@
             </div>
         </form>
     </div>
+
+    <!-- Processor -->
+    <div>
+        <h2>Processor</h2>
+        <h3>Main characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="processorbrand">Choose a CPU brand:</label>
+                <input type="text" name="processorbrand">
+                
+                <label for="processorsocket">Choose a socket type:</label>
+                <input type="text" name="processorsocket">
+        
+                <label for="processorthreads">Choose the number of threads:</label>
+                <select id="processorthreads" name="processorthreads">
+                    <option value="4">4 Threads</option>
+                    <option value="8">8 Threads</option>
+                    <option value="12">12 Threads</option>
+                    <option value="16">16 Threads</option>
+                    <option value="24">24 Threads</option>
+                    <option value="32">32 Threads</option>
+                </select>
+    
+                <label for="processorboostclock">Choose the refresh rate during Turbo Boost:</label>
+                <select id="processorboostclock" name="processorboostclock">
+                    <option value="3.5">3.5 GHz</option>
+                    <option value="4.0">4.0 GHz</option>
+                    <option value="4.5">4.5 GHz</option>
+                    <option value="5.0">5.0 GHz</option>
+                    <option value="5.5">5.5 GHz</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="processorfamily">Choose a CPU family:</label>
+                <input type="text" name="processorfamily">
+    
+                <label for="processorcores">Choose the number of cores:</label>
+                <select id="processorcores" name="processorcores">
+                    <option value="2">2 Cores</option>
+                    <option value="4">4 Cores</option>
+                    <option value="6">6 Cores</option>
+                    <option value="8">8 Cores</option>
+                    <option value="12">12 Cores</option>
+                    <option value="16">16 Cores</option>
+                </select>
+    
+                <label for="processorbaserate">Choose the basic refresh rate:</label>
+                <select id="processorbaserate" name="processorbaserate">
+                    <option value="2.5">2.5 GHz</option>
+                    <option value="3.0">3.0 GHz</option>
+                    <option value="3.5">3.5 GHz</option>
+                    <option value="4.0">4.0 GHz</option>
+                    <option value="4.5">4.5 GHz</option>
+                </select>
+    
+                <label for="processorl3cache">Choose the amount of L3 cache memory:</label>
+                <select id="processorl3cache" name="processorl3cache">
+                    <option value="4">4 MB</option>
+                    <option value="8">8 MB</option>
+                    <option value="12">12 MB</option>
+                    <option value="16">16 MB</option>
+                    <option value="32">32 MB</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Vide Card -->
+    <div>
+        <h2>Video Card</h2>
+        <h3>Main characteristics</h3>
+        <form class="form" action="">
+            <div class="form-first-side">
+                <label for="videocardbrand">Choose a video card brand:</label>
+                <input type="text" name="videocardbrand">
+                
+                <label for="videocardstorage">Choose video card storage size:</label>
+                <select id="videocardstorage" name="videocardstorage">
+                    <option value="4">4 GB</option>
+                    <option value="6">6 GB</option>
+                    <option value="8">8 GB</option>
+                    <option value="12">12 GB</option>
+                    <option value="16">16 GB</option>
+                    <option value="24">24 GB</option>
+                </select>
+        
+                <label for="videocardbuswidth">Choose bus width:</label>
+                <select id="videocardbuswidth" name="videocardbuswidth">
+                    <option value="128">128-bit</option>
+                    <option value="192">192-bit</option>
+                    <option value="256">256-bit</option>
+                    <option value="320">320-bit</option>
+                    <option value="384">384-bit</option>
+                </select>
+    
+                <label for="videocardcorerate">Choose core refresh rate:</label>
+                <select id="videocardcorerate" name="videocardcorerate">
+                    <option value="1.5">1.5 GHz</option>
+                    <option value="1.8">1.8 GHz</option>
+                    <option value="2.0">2.0 GHz</option>
+                    <option value="2.2">2.2 GHz</option>
+                    <option value="2.5">2.5 GHz</option>
+                </select>
+            </div>
+            <div class="form-second-side">
+                <label for="videocardmodel">Choose a GPU model:</label>
+                <input type="text" name="videocardmodel">
+    
+                <label for="videocardmemtype">Choose the type of memory:</label>
+                <select id="videocardmemtype" name="videocardmemtype">
+                    <option value="gddr5">GDDR5</option>
+                    <option value="gddr6">GDDR6</option>
+                    <option value="gddr6x">GDDR6X</option>
+                    <option value="hbm2">HBM2</option>
+                </select>
+    
+                <label for="videocardpower">Choose energy consumption:</label>
+                <select id="videocardpower" name="videocardpower">
+                    <option value="150">150W</option>
+                    <option value="200">200W</option>
+                    <option value="250">250W</option>
+                    <option value="300">300W</option>
+                    <option value="350">350W</option>
+                    <option value="450">450W</option>
+                </select>
+    
+                <label for="videocardmemfreq">Choose memory frequency:</label>
+                <select id="videocardmemfreq" name="videocardmemfreq">
+                    <option value="14">14 Gbps</option>
+                    <option value="15.5">15.5 Gbps</option>
+                    <option value="16">16 Gbps</option>
+                    <option value="17.5">17.5 Gbps</option>
+                    <option value="19">19 Gbps</option>
+                    <option value="21">21 Gbps</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
 
     <script src="./Script/Console-info/script.js"></script>
 </body>
