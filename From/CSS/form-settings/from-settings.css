@@ -1,9 +1,11 @@
 :root{
     --dark:black;
     --brith:white;
+    --accent:yellow;
 
     --form-bg:var(--dark);
     --title-color:var(--brith);
+    --text-accent:var(--accent)
 }
 
 label{
@@ -40,5 +42,5 @@ h1,h2,h3,h4,h5,h6{
 
 .mouse-improvment{
     background-color: black;
-    color: yellow;
+    color: var(--text-accent);
 }
