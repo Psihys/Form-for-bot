@@ -1,13 +1,26 @@
+:root{
+    --dark:black;
+    --brith:white;
+
+    --form-bg:var(--dark);
+    --title-color:var(--brith);
+}
+
+/* h1,h2,h3,h4,h5,h6{
+    color: var(--title-color);
+} */
 .form{
-    width: 800px;
+    max-width: 1000px;
     height: auto;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .form-first-side{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     
 }
 .form-second-side{
