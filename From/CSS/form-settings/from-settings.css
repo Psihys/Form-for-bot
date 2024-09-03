@@ -6,9 +6,12 @@
     --title-color:var(--brith);
 }
 
-/* h1,h2,h3,h4,h5,h6{
+label{
+    margin-top: 10px;
+}
+h1,h2,h3,h4,h5,h6{
     color: var(--title-color);
-} */
+}
 .form{
     max-width: 1000px;
     height: auto;
@@ -27,9 +30,15 @@
     display: flex;
     flex-direction: column;
     float: right;
-    width: 300px;
+    max-width: 300px;
 }
 
 .is-hidden{
     display: none;
+}
+
+
+.mouse-improvment{
+    background-color: black;
+    color: yellow;
 }
