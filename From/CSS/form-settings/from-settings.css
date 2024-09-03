@@ -7,7 +7,9 @@
     --title-color:var(--brith);
     --text-accent:var(--accent)
 }
-
+html,body{
+    box-sizing: border-box;
+}
 label{
     margin-top: 10px;
 }
