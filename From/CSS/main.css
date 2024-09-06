@@ -1,0 +1,223 @@
+@import './button/button.css';
+
+:root{
+    --dark:black;
+    --brith:white;
+    --accent:yellow;
+
+    --form-bg:var(--dark);
+    --title-color:var(--brith);
+    --text-accent:var(--accent)
+}
+
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+  }
+
+html,body{
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--dark);
+}
+.form{
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form-first-side{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    
+}
+.form-second-side{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    max-width: 300px;
+}
+label{
+    margin-top: 10px;
+}
+
+.is-hidden{
+    display: none;
+}
+
+/* main */
+
+.main{
+    width: 100%;
+    margin: auto;
+}
+
+.catalog-section{
+    width: 50%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catalog-list {
+    max-width: 600px;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.catalog-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+/* Комп'ютерні компоненти */
+.computer-components-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.computer-components-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+
+.computer-components-list-link{
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* Периферія */
+.periphery-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+
+}
+
+.periphery-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+
+.periphery-list-link{
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Монітори */
+.monitors-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+
+}
+
+.monitors-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+.monitors-list-link{
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Корпус для ПК */
+.pc-case-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+
+}
+
+.pc-case-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+.pc-case-list-link{
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+/* Computers */
+.computers-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+
+}
+
+.computers-list.show {
+    opacity: 1; 
+    transform: translateY(0); 
+    display: flex; 
+}
+
+.computers-list-link{
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
