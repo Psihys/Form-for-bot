@@ -122,7 +122,11 @@ computersButton.addEventListener('click', computersTransition);
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.computer-components-list-link');
-    
+    const links1 = document.querySelectorAll('.periphery-list-link');
+    const links2 = document.querySelectorAll('.monitors-list-link');
+    const links3 = document.querySelectorAll('.pc-case-list-link');
+    const links4 = document.querySelectorAll('.computers-list-link');
+
 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -132,14 +136,109 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.getElementById(targetId);
             
             if (targetElement) {
-                // Scroll to the target element
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-
-                // Remove 'is-hidden' class to show the target element
-                targetElement.classList.remove('is-hidden');
-                
-                // Optionally add a class for smooth visibility transition
-                targetElement.classList.add('show');
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
+            }
+        });
+    });
+    links1.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
+            }
+        });
+    });
+    links1.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
+            }
+        });
+    });
+    links2.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
+            }
+        });
+    });
+    links3.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
+            }
+        });
+    });
+    links4.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            
+            const targetId = this.getAttribute('href').substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                if (targetElement.classList.contains('is-hidden')) {
+                    // If the element is hidden, scroll to it and show it
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    targetElement.classList.remove('is-hidden');
+                } else {
+                    // If the element is already visible, hide it again
+                    targetElement.classList.add('is-hidden');
+                }
             }
         });
     });
