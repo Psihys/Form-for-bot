@@ -147,25 +147,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    links1.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            
-            const targetId = this.getAttribute('href').substring(1); // Get the target ID
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                if (targetElement.classList.contains('is-hidden')) {
-                    // If the element is hidden, scroll to it and show it
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                    targetElement.classList.remove('is-hidden');
-                } else {
-                    // If the element is already visible, hide it again
-                    targetElement.classList.add('is-hidden');
+    document.addEventListener('DOMContentLoaded', () => {
+        const links1 = document.querySelectorAll('.periphery-list-link'); // Select all links in the periphery list
+    
+        links1.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+    
+                const targetId = this.getAttribute('href').substring(1); // Get the target ID without the '#'
+                const targetElement = document.getElementById(targetId); // Get the element by ID
+    
+                if (targetElement) {
+                    if (targetElement.classList.contains('is-hidden')) {
+                        // If the element is hidden, scroll to it and show it
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        targetElement.classList.remove('is-hidden'); // Remove 'is-hidden' class to show it
+                    } else {
+                        // If the element is already visible, hide it again
+                        targetElement.classList.add('is-hidden'); // Add 'is-hidden' class to hide it
+                    }
                 }
-            }
+            });
         });
     });
+    
     links1.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default link behavior
