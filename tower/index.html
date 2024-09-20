@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <title>Document</title>
+    <title>Hanoi Towers</title>
 </head>
 <body>
-    <main class="main">
-        <section class="section">
-            <div class="tower1">First tower</div>
-            <div class="tower2"> Second tower</div>
-            <div class="tower3">Third tower</div>
-        </section>
+
+<script>
+    
+    function hanoi(n, from, aux, to) {
+        if (n === 1) {
+            console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`);
+            return;
+            
+        } else{
+        hanoi(n - 1, from, to, aux);
         
-    </main>
+        hanoi(n - 1, aux, from, to);
+        }
+        console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`);
+        }
+
+    function runHanoi() {
+        const n = prompt('Введіть кількість дисків:');
+        if (!n || isNaN(n)) {
+            console.log('Введіть правильне число дисків');
+            return;
+        }
+
+        const start = performance.now();
+        hanoi(Number(n), 1, 2, 3);
+        const end = performance.now();
+        console.log(`Час виконання алгоритму: ${(end - start).toFixed(4)} мілісекунд`);
+    }
+
+    runHanoi();
+</script>
+
 </body>
 </html>
