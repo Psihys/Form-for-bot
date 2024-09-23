@@ -10,32 +10,31 @@
 <script>
     
     function hanoi(n, from, aux, to) {
-        if (n === 1) {
-            console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`);
-            return;
-            
-        } else{
-        hanoi(n - 1, from, to, aux);
-        
-        hanoi(n - 1, aux, from, to);
-        }
+    if (n === 1) {
         console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`);
-        }
+        return;
+    } else {
+        hanoi(n - 1, from, to, aux); 
+        console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`); 
+        hanoi(n - 1, aux, from, to); 
+    }
+}
 
-    function runHanoi() {
-        const n = prompt('Введіть кількість дисків:');
-        if (!n || isNaN(n)) {
-            console.log('Введіть правильне число дисків');
-            return;
-        }
-
-        const start = performance.now();
-        hanoi(Number(n), 1, 2, 3);
-        const end = performance.now();
-        console.log(`Час виконання алгоритму: ${(end - start).toFixed(4)} мілісекунд`);
+function runHanoi() {
+    const n = prompt('Введіть кількість дисків:');
+    if (!n || isNaN(n)) {
+        console.log('Введіть правильне число дисків');
+        return;
     }
 
-    runHanoi();
+    const start = performance.now();
+    hanoi(Number(n), 1, 2, 3);
+    const end = performance.now();
+    console.log(`Час виконання алгоритму: ${(end - start).toFixed(4)} мілісекунд`);
+}
+
+runHanoi();
+
 </script>
 
 </body>
