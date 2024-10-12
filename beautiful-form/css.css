@@ -80,7 +80,7 @@ body {
 .form {
     text-align: left;
     width: auto;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -158,9 +158,14 @@ input:focus {
         border-radius: 10px;
         margin-bottom: 20px;
     }
+    
+    .form{
+        align-items: center;
+    }
 
     .register {
         width: 100%;
+        height: auto;
     }
 
     .title {
