@@ -136,3 +136,45 @@ input:focus {
     visibility: visible;
     transition: opacity 1s ease-in-out, visibility 0s;
 }
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .signUP, .signIN {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .register {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+}
