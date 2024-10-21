@@ -10,28 +10,25 @@ function algorithmS(array, target) {
             return i; // Повертає позицію першого входження
         }
     }
-    return -1; // Якщо не знайдено
+    return -1; 
 }
 
-// Алгоритм Q (двійковий пошук)
 function algorithmQ(array, target) {
-    let left = 0;
-    let right = array.length - 1;
+    // Add the target as a sentinel
+    array.push(target); // This simulates the K(N+1) for the algorithm
+    let i = 0;
 
-    while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
-        if (array[mid] === target) {
-            return mid; // Повертає позицію першого входження
-        } else if (array[mid] < target) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
-    }
-    return -1; // Якщо не знайдено
-}
+    while (array[i] !== target) {
+        i++; // Increment i
+    };
 
-// Інтерфейс користувача
+    if (i < array.length - 1) {
+        return i; // Return the position of the found element
+    } else {
+        return -1; // If not found
+    };
+};
+
 function userInterface() {
     const size = parseInt(prompt("Введіть об’єм випадкової послідовності:"));
     const target = parseInt(prompt("Введіть аргумент пошуку:"));
@@ -42,12 +39,8 @@ function userInterface() {
     const positionS = algorithmS(randomArray, target);
     console.log(`Результат простого пошуку (алгоритм S): ${positionS === -1 ? "Елемент не знайдено" : `Елемент знайдено на позиції ${positionS}`}`);
 
-    // Для двійкового пошуку масив повинен бути відсортований
-    const sortedArray = [...randomArray].sort((a, b) => a - b);
-    console.log("Відсортований масив:", sortedArray);
-
-    const positionQ = algorithmQ(sortedArray, target);
-    console.log(`Результат двійкового пошуку (алгоритм Q): ${positionQ === -1 ? "Елемент не знайдено" : `Елемент знайдено на позиції ${positionQ}`}`);
+    const positionQ = algorithmQ([...randomArray], target); // Use a copy of the array for Q
+    console.log(`Результат швидкого послідовного пошуку (алгоритм Q): ${positionQ === -1 ? "Елемент не знайдено" : `Елемент знайдено на позиції ${positionQ}`}`);
 
     if (positionS !== -1) {
         console.log(`Елемент за позицією ${positionS}: ${randomArray[positionS]}`);
@@ -56,3 +49,4 @@ function userInterface() {
 
 // Запуск інтерфейсу
 userInterface();
+
