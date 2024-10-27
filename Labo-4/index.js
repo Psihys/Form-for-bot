@@ -15,7 +15,7 @@ function algorithmS(array, target) {
 
 function algorithmQ(array, target) {
     // Add the target as a sentinel
-    array.push(target); // This simulates the K(N+1) for the algorithm
+ // This simulates the K(N+1) for the algorithm
     let i = 0;
 
     while (array[i] !== target) {
@@ -33,6 +33,7 @@ function userInterface() {
     const size = parseInt(prompt("Введіть об’єм випадкової послідовності:"));
     const target = parseInt(prompt("Введіть аргумент пошуку:"));
     const randomArray = generateRandomArray(size);
+    randomArray.push(target);
     
     console.log("Сгенерований масив:", randomArray);
 
