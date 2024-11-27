@@ -62,6 +62,9 @@ const userInterface = () => {
     alert('Result: ' + intersectionBruteForceResult)
     alert('Result: ' + intersectionConversionResult)
 
+    // Запуск ��нтерфейсу
+
 }
 
-userInterface()
+userInterface();
+
