@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanoi Towers</title>
+    <title>Frequency Polygon and Histogram</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
 
+<div id="polygon-plot" style="width: 100%; height: 500px;"></div>
+<div id="histogram-plot" style="width: 100%; height: 500px;"></div>
+
 <script>
+    // Дані (упорядковані числа)
+    const data = [94.35, 96.35, 96.4, 97.35, 98.21, 98.35, 98.35, 98.35, 99.0, 99.35, 
+                  99.4, 99.55, 100.35, 100.6, 100.7, 100.75, 101.0, 101.4, 101.4, 101.4];
     
-    function hanoi(n, from, aux, to) {
-    if (n === 1) {
-        console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`);
-        return;
-    } else {
-        hanoi(n - 1, from, to, aux); 
-        console.log(`Перемістити диск із кілочка №${from} на кілочок №${to}`); 
-        hanoi(n - 1, aux, from, to); 
-    }
-}
+    // Кількість інтервалів (бінів) для гістограми
+    const numBins = 5;
 
-function runHanoi() {
-    const n = prompt('Введіть кількість дисків:');
-    if (!n || isNaN(n)) {
-        console.log('Введіть правильне число дисків');
-        return;
-    }
+    // Побудова полігону частот (лінійний графік)
+    const freqPolygon = {
+        x: data,
+        type: 'histogram',
+        histnorm: 'count',
+        nbinsx: numBins,
+        name: 'Frequency Polygon',
+        marker: {color: 'blue'},
+        line: {shape: 'hv'}
+    };
 
-    const start = performance.now();
-    hanoi(Number(n), 1, 2, 3);
-    const end = performance.now();
-    console.log(`Час виконання алгоритму: ${(end - start).toFixed(4)} мілісекунд`);
-}
+    const polygonLayout = {
+        title: 'Frequency Polygon',
+        xaxis: {title: 'X'},
+        yaxis: {title: 'Frequency'},
+        showlegend: false
+    };
 
-runHanoi();
+    Plotly.newPlot('polygon-plot', [freqPolygon], polygonLayout);
 
+    // Побудова гістограми частот
+    const histogram = {
+        x: data,
+        type: 'histogram',
+        nbinsx: numBins,
+        marker: {color: 'orange'},
+        name: 'Histogram'
+    };
+
+    const histogramLayout = {
+        title: 'Histogram of Frequencies',
+        xaxis: {title: 'X'},
+        yaxis: {title: 'Frequency'},
+        showlegend: false
+    };
+
+    Plotly.newPlot('histogram-plot', [histogram], histogramLayout);
 </script>
 
 </body>
