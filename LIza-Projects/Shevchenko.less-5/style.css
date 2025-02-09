@@ -17,7 +17,7 @@ body {
     border-radius: 8px;
   }
   
-  ul.seasons {
+  .seasons {
     list-style: none;
     padding: 0;
   }
