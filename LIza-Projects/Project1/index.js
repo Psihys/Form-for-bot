@@ -6,7 +6,7 @@ button.addEventListener('click', (e) => {
   let text = answer.value
   if (text === '') {
     alert('Введіть текст')
-  } else if (text === 'Орел' || text === 'орел') {
+  } else if (text === 'Море' || text === 'море') {
     alert('Правильна відповідь, молодець!')
   } else {
     alert('Неправильна відповідь, спробуй ще!')
