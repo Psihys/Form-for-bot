@@ -171,7 +171,7 @@ const editItem = (existingRecord) => {
   localStorage.setItem(`record_${number}`, JSON.stringify(formData))
   alert('Запис оновлено успішно')
   form.reset()
-  document.querySelector('.number').disabled = false
+  
 }
 
 const deleteItem = () => {
@@ -188,12 +188,13 @@ const deleteItem = () => {
   document.getElementById('unit').classList.add('is-hidden')
 
   submitButton.textContent = 'Delete item'
-  submitButton.removeEventListener('click', handleDeleteItem)
-  submitButton.addEventListener('click', handleDeleteItem)
+  submitButton.removeEventListener('click', handleDeleteItem);
+  submitButton.addEventListener('click', handleDeleteItem);
 }
 
-const handleDeleteItem = () => {
-  document.querySelector('.number').disabled = false
+const handleDeleteItem = (e) => {
+  e.preventDefault()
+  
   const number = document.getElementById('number').value.trim()
   if (!number) {
     alert('Number is required')
@@ -205,11 +206,13 @@ const handleDeleteItem = () => {
   if (!existingRecord) {
     alert('Record not found')
     return
-  } else {
+  } else{
     localStorage.removeItem(`record_${number}`)
     alert('Запис видалено успішно')
     form.reset()
   }
+
+  
 }
 
 editButton.addEventListener('click', findItem)
