@@ -1,6 +1,6 @@
 const handleFindFunction = (item) => {
   const output = document.getElementById('output')
-  output.textContent = '' // Очищаем предыдущий вывод
+  output.textContent = '' 
 
   const m = item.length
   const n = item[0]?.length || 0
