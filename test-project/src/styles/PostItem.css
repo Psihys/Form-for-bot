@@ -1,0 +1,35 @@
+.post-item {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.post-button {
+  padding: 5px 10px;
+  font-size: 16px;
+
+  border-radius: 20%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  cursor: pointer;
+}
