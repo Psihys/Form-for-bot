@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/PostItem.css'; // Импортируем CSS
+import MyButton from './UI/button/MyButton';
 
 const PostItem = (props) => {
 
@@ -10,7 +11,7 @@ const PostItem = (props) => {
       <p className="post-text">
         {props.post.body}
       </p>
-      <button onClick={} className='post-button'>Delete</button>
+      <MyButton onClick={() => props.remove(props.post)}  className='post-button'>Delete</MyButton>
     </div>
   );
 };
