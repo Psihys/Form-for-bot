@@ -4,7 +4,7 @@ import MySelect from './UI/Select/MySelect'
 
 const PostFilter = ({ filter, setFilter }) => {
   return (
-    <div>
+    <div className='filter-section'>
       <MyInput
         value={filter.query}
         onChange={(e) => setFilter({...filter , query: e.target.value})}

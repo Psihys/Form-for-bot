@@ -1,8 +1,23 @@
-.myBtn{
-    padding: 5px 15px;
-    color: teal ;
+.myBtn {
+    padding: 12px 24px;
+    color: #fff;
     font-size: 16px;
-    background: transparent;
-    border: 1px solid green;
+    font-weight: 500;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.myBtn:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.myBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
 }
