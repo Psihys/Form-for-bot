@@ -1,31 +1,81 @@
-// const product = prompt('Enter the product to check the prijs')
+console.log("hello world")
 
-// const productPrice = document.getElementById("product_price")
-// let price
+const obj1 = {
+    name: "John",
+    age: 30,
+    city: "New York",
+    jobInfo:{
+        prevJob: "Teacher",
+        currentJob: "Engineer",
+        salaryInfo: {
+            prevSalary: 30000,
+            currentSalary: 50000
+        }
+    }
+} 
 
-// switch (product.toLowerCase()) {
-//   case 'apple':
-//     price = 10
+const obj2 = {
+    name: "Jane",
+    age: 25,
+    city: "New York",
+    jobInfo:{
+        prevJob: "Teacher",
+        currentJob: "Engineer",
+        salaryInfo:{
+            prevSalary: 30000,
+            currentSalary: 50000
+        } 
+    }
+}
+
+const areObjectsEqual = (object1, object2) =>{
+    if(typeof object1 !== "object" || typeof object2 !== "object" || object1 === null || object2 === null){
+        return object1 === object2
+    }
+
+    const key1 = Object.keys(object1)
+    console.log(key1)
+
+    const key2 = Object.keys(object2)
+    console.log(key2)
+
+    if(key1.length !== key2.length){
+        return false
+    }
+
+    for(let key of key1){
+        if(!key2.includes(key)){
+            return false
+        }
+
+        if(!areObjectsEqual(object1[key], object2[key])){
+            return false
+        }
+    }
+
+    return true
+}
+
+console.log(areObjectsEqual(obj1, obj2))
+
+
+const showObjectKeys = (object) =>{
+    if( typeof object !== "object" || object === null){
+        return
+    }
+
+    const keys = Object.keys(object)
     
-//     break;
 
-//     case 'orange':
-//     price = 15
+    for (let key of keys){
+        const value = object[key]
 
-//     break;
+        if(typeof value === "object" && value !== null){
+            showObjectKeys(value)
+        }else {
+            console.log(`${key}: ${value}`)
+        }
+    }
+}
 
-//     case 'banana':
-//     price = 5
-   
-//     break;
-
-//     default:
-//         price = "Unknown product"
-// }
-
-// console.log(price)
-
-// productPrice.textContent = price
-
-
-
+showObjectKeys(obj1)

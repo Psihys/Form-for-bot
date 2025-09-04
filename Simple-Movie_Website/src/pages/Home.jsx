@@ -1,7 +1,7 @@
 import MovieCard from '../components/MovieCard'
 import './Home.css'
 
-const Home = ({ searchTerm, setSearchTerm, filteredMovies,favoriteMovies }) => {
+const Home = ({ searchTerm, setSearchTerm, filteredMovies }) => {
   
 
   return (
