@@ -1,0 +1,110 @@
+.uv-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.uv-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff9800, #f44336);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.uv-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.uv-container:hover::before {
+  transform: scaleX(1);
+}
+
+.uv-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.uv-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.uv-value span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin-left: 5px;
+}
+
+.uv-bar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.uv-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  animation: uvGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes uvGlow {
+  0% {
+    box-shadow: 0 0 5px currentColor;
+  }
+  100% {
+    box-shadow: 0 0 15px currentColor;
+  }
+}
+
+.uv-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .uv-container {
+    padding: 18px;
+  }
+  
+  .uv-value {
+    font-size: 2rem;
+  }
+}

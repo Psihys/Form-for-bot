@@ -1,0 +1,79 @@
+.hourle-temperature-list-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden; 
+  position: relative;
+  
+  max-width: 600px;
+  
+  flex: 1;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hourle-temperature-list-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.hourle-temperature-list-container h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.hourly-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #667eea transparent;
+
+  flex: 1;
+  align-items: center;
+}
+
+.hourly-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hourly-slider::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.hourly-slider::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 3px;
+}
+
+.hourly-slider::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .hourle-temperature-list-container {
+    padding: 15px;
+  }
+
+  .hourle-temperature-list-container h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+}
