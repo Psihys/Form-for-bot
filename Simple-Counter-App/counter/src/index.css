@@ -1,0 +1,79 @@
+/* ===== Full CSS Reset ===== */
+
+/* Скидання відступів і box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базові стилі для HTML і body */
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Вирівнювання мультимедіа */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Скидання для посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Списки без маркерів */
+ul, ol {
+  list-style: none;
+}
+
+/* Форматування тексту */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-weight: normal;
+}
+
+/* Кнопки та форми */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Таблиці */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Форми */
+textarea {
+  resize: vertical;
+}
+
+/* Root контейнер для SPA */
+#root, #__next {
+  isolation: isolate;
+  height: 100%;
+}
