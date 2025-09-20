@@ -1,42 +1,46 @@
-console.log('hello world')
+// console.log('hello world')
 
-const obj1 = {
-  name: 'John',
-  age: 30,
-  city: 'New York',
-  jobInfo: {
-    prevJob: 'Teacher',
-    currentJob: 'Engineer',
-    salaryInfo: {
-      prevSalary: 30000,
-      currentSalary: 50000,
-    },
-  },
-}
+// const obj1 = {
+//   name: 'John',
+//   age: 30,
+//   city: 'New York',
+//   jobInfo: {
+//     prevJob: 'Teacher',
+//     currentJob: 'Engineer',
+//     salaryInfo: {
+//       prevSalary: 30000,
+//       currentSalary: 50000,
+//     },
+//   },
+// }
 
-const obj2 = {
-  name: 'Jane',
-  age: 25,
-  city: 'New York',
-  jobInfo: {
-    prevJob: 'Teacher',
-    currentJob: 'Engineer',
-    salaryInfo: {
-      prevSalary: 30000,
-      currentSalary: 50000,
-    },
-  },
-  importantInfo: function(){
-    console.log(`Expected salary is ${this.jobInfo.salaryInfo.currentSalary}`)
-  }
-}
+// const obj2 = {
+//   name: 'Jane',
+//   age: 25,
+//   city: 'New York',
+//   jobInfo: {
+//     prevJob: 'Teacher',
+//     currentJob: 'Engineer',
+//     salaryInfo: {
+//       prevSalary: 30000,
+//       currentSalary: 50000,
+//     },
+//   },
+//   importantInfo: function(){
+//     console.log(`Expected salary is ${this.jobInfo.salaryInfo.currentSalary}`)
+//   }
+// }
 
-console.log(obj1)
-delete obj1.jobInfo.salaryInfo.currentSalary
-obj2.importantInfo()
+// obj1.jobInfo.salaryInfo.currentSalary = 60000
+// console.log(obj1)
 
-const stringifyJSON = JSON.stringify(obj1)
-console.log(stringifyJSON)
+// const stringifyJSON = JSON.stringify(obj1)
+// console.log(stringifyJSON)
+
+// const objCopy = JSON.parse(JSON.stringify(obj1))
+
+// const obj3 = { ...obj1, hobbies:"Play pc-games"}
+// console.log(obj3)
 
 // const areObjectsEqual = (object1, object2) =>{
 //     if(typeof object1 !== "object" || typeof object2 !== "object" || object1 === null || object2 === null){
@@ -87,3 +91,5 @@ console.log(stringifyJSON)
 // }
 
 // showObjectKeys(obj1)
+
+
