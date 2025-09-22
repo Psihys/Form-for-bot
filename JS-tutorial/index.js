@@ -92,4 +92,44 @@
 
 // showObjectKeys(obj1)
 
+// const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(myArray)
 
+// myArray.push(11)
+// console.log(myArray)
+
+// myArray.pop()
+// console.log(myArray)
+
+// myArray.shift()
+// console.log(myArray)
+
+// myArray.unshift(1)
+// console.log(myArray)
+
+// myArray.splice(5, 3)
+// console.log(myArray)
+
+// console.log('ForEach')
+// myArray.forEach((element, index) => {
+//   console.log(`Element at index ${index}: ${element}`)
+// })
+
+// console.log('Mapping')
+// const mapArray = myArray.map((element, index) => {
+//   console.log(`Element at index ${index}: ${element}`)
+//   return element * 2
+// })
+// console.log(mapArray)
+// console.log(myArray)
+
+// const findArray = myArray.find((element) => element > 4)
+// console.log(findArray)
+
+// const find2Arrray = myArray.find((element) => {
+//   return element > 5
+// })
+// console.log(find2Arrray)
+
+// const filterArray = myArray.filter((element) => element > 4)
+// console.log(filterArray)
