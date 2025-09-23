@@ -133,3 +133,57 @@
 
 // const filterArray = myArray.filter((element) => element > 4)
 // console.log(filterArray)
+
+// const value = 5
+
+// const resalt = value ? console.log('true') : console.log('false')
+// console.log(resalt)
+
+// const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// for( let i = 0; i < myArray.length; i++){
+//     console.log(myArray[i])
+// }
+
+// for( let element of myArray){
+//     console.log(element)
+// }
+
+// for( let index in myArray){
+//     console.log(myArray[index])
+// }
+
+// const obj = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York',
+//     jobInfo: {
+//       prevJob: 'Teacher',
+//       currentJob: 'Engineer',
+//       salaryInfo: {
+//         prevSalary: 30000,
+//         currentSalary: 50000,
+//       },
+//     },
+//     importantInfo: function(){
+//       console.log(`Expected salary is ${this.jobInfo.salaryInfo.currentSalary}`)
+//     }
+// }
+
+// for (let key in obj){
+//     console.log(key)
+// }
+
+// for (let value of Object.values(obj)){
+//     console.log("///" + value)
+
+// }
+
+// const array = [ "a","b","c","d","e","f","g"]
+// for (let value of array){
+//     console.log(value)
+// }
+
+// for(let key in array){
+//     console.log(key)
+// }   
