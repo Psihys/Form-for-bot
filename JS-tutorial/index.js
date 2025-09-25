@@ -187,3 +187,28 @@
 // for(let key in array){
 //     console.log(key)
 // }   
+
+
+// class Person{
+//     constructor(name, age){
+//         this.name = name
+//         this.age = age
+//     }
+
+//     sayHello(){
+//         console.log(`Hello, my name is ${this.name}, I'm ${this.age} years old`)
+//     }
+// }
+
+// const secondPerson = new Person("Steev", 16)
+// secondPerson.sayHello()
+
+// console.log(secondPerson.hasOwnProperty('sayHello')) 
+
+// class Worker extends Person {
+//     constructor(name, age, job, stage){
+//         super(name, age)
+//         this.job = job
+//         this.stage = stage
+//     }
+// }
