@@ -186,8 +186,7 @@
 
 // for(let key in array){
 //     console.log(key)
-// }   
-
+// }
 
 // class Person{
 //     constructor(name, age){
@@ -203,7 +202,7 @@
 // const secondPerson = new Person("Steev", 16)
 // secondPerson.sayHello()
 
-// console.log(secondPerson.hasOwnProperty('sayHello')) 
+// console.log(secondPerson.hasOwnProperty('sayHello'))
 
 // class Worker extends Person {
 //     constructor(name, age, job, stage){
@@ -212,3 +211,69 @@
 //         this.stage = stage
 //     }
 // }
+
+// Promises
+// const getData = (url) =>
+//   new Promise((resolve, reject) => {
+//     fetch(url)
+//       .then((response) => response.json())
+//       .then((data) => {
+//         resolve(data)
+//       })
+//       .catch((error) => {
+//         reject(error)
+//       })
+//   })
+
+// getData('https://jsonplaceholder.typicode.com/todos/')
+//   .then((data) => {
+//     console.log(data)
+//   })
+//   .catch((error) => {
+//     console.log(error)
+//   })
+
+// // Async Functions 
+//   const asyncFn = async () =>{
+//     return "Success"
+//   }
+//   asyncFn().then ((data) =>{
+//     console.log(data)
+//   }).catch((error) =>{
+//     console.log(error)
+//   })
+
+// //   Await in async
+
+// const timerPromise = () =>
+//   new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve()
+//     }, 2000)
+//   })
+
+//   const asyncFn2 = async () =>{
+//     console.log('Timer starts')
+//     await timerPromise()
+//     console.log('Timer ends')
+//   }
+
+//   asyncFn2().then((data) =>{
+//     console.log(data)
+//   }).catch((error) =>{
+//     console.log(error)
+//   })
+
+// const getData = async ( url) =>{
+//     const res = await fetch(url)
+//     const json = await res.json()
+//     return json
+// }
+
+// const url = 'https://jsonplaceholder.typicode.com/todos/'
+
+// getData(url).then((data) =>{
+//     console.log(data)
+// }).catch((error) =>{
+//     console.log(error)
+// })
