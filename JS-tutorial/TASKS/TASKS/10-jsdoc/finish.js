@@ -12,3 +12,8 @@
  *
  * 4. Вызовите функцию
  */
+const myFunction = (a, b) => {
+    return a - b;
+}
+
+console.log(myFunction(10, 5) )

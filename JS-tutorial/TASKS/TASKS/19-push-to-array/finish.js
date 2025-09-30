@@ -6,3 +6,7 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+let array = [1, 'string', true]
+array.push(2, 3, 4);
+
+console.log(array.length);

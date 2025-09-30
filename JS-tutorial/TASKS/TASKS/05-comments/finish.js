@@ -7,3 +7,10 @@
  *
  * 3. Создайте многострочный комментарий
  */
+
+// Comment
+let myName = 'Bogdan'; // My name
+
+/*
+Multi-line comment
+*/

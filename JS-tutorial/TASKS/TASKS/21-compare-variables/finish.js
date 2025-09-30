@@ -11,7 +11,10 @@ let myVariable2 = '5'
 
 // Напишите код здесь
 
+console.log(Number(myVariable1) <= Number(myVariable2))
+
 myVariable1 = '20'
 myVariable2 = 100
 
 // Напишите код здесь
+console.log(parseInt(myVariable1) <= parseInt(myVariable2))

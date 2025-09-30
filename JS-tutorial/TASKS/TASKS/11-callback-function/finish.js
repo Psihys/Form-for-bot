@@ -4,3 +4,12 @@
  *
  * 2. Используйте стрелочную функцию
  */
+
+
+const myFunction = () => {
+    setTimeout(() => {
+        console.log('Привет, мир!');
+    }, 5000);
+};
+
+myFunction()

@@ -12,3 +12,10 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+let string = 'string';
+let string2 = string.toUpperCase();
+
+console.log(string instanceof String);
+console.log(typeof string);
+console.log(string2);

@@ -4,3 +4,6 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+let myString = 'Hello, world!';
+
+console.log(myString.length);

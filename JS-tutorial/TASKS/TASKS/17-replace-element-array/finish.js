@@ -8,3 +8,10 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+let array = [1, 'string', true]
+
+console.log(array);
+
+array[1] = 2;
+
+console.log(array);

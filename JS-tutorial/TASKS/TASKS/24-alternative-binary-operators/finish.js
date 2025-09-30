@@ -5,10 +5,10 @@
 
 let a = 10
 
-a = a + 1
+a += 1
 console.log(a) // 11
 
-a = a * 2
+a *=2
 console.log(a) // 22
 
 a = a - 5

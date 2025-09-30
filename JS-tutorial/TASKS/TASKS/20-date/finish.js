@@ -4,3 +4,6 @@
  *
  * 2. Выведите значение в консоль
  */
+
+let date = new Date();
+console.log(date.getTime());
