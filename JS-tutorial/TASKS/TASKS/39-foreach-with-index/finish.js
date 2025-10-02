@@ -10,3 +10,4 @@
  */
 
 const myCities = ['London', 'New York', 'Singapore']
+

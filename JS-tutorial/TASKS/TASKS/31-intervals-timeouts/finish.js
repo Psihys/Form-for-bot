@@ -12,3 +12,15 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+
+let counter = 1
+
+const intervalId = setInterval(() => {
+  console.log(`Сообщение номер ${counter}`)
+
+  if (counter === 5) {
+    clearInterval(intervalId) // остановим интервал после 5 сообщений
+  }
+
+  counter++
+}, 2000)

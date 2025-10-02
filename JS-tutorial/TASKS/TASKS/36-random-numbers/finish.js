@@ -17,4 +17,12 @@
 const MIN = 1000
 const MAX = 9999
 
+let randomNumber = Math.round(Math.random() * (MAX - MIN) + MIN)
+
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+
+console.log(randomNumber)
+if (myNumbers.includes(randomNumber)) {
+  randomNumber = Math.round(Math.random() * (MAX - MIN) + MIN)
+}
+console.log(randomNumber)

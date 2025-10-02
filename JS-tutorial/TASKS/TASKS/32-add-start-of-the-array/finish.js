@@ -10,5 +10,6 @@
 const myArray = [true, null]
 
 // Напишите код здесь
+myArray.unshift('Hello', 100)
 
 console.log(myArray) // [100, "Hello", true, null]
