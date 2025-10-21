@@ -1,0 +1,21 @@
+/* .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    gap: 10px;
+}
+
+.btn{
+    max-width: 100px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: white;
+    background-color: blue;
+    transform: scaleY(1.2);
+} */

@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
       <main>
         <section>
@@ -64,7 +64,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   )
 }
 
