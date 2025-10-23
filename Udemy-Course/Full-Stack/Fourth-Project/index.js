@@ -52,13 +52,12 @@ const checkAnswers = () => {
   } else {
     console.log('❌ Ошибка')
     playSound('wrong')
-    // Визуальный эффект ошибки
     $('body').addClass('game-over')
     setTimeout(() => {
       $('body').removeClass('game-over')
     }, 200)
 
-    // Сброс игры
+
     startOver()
   }
 }
