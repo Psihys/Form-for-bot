@@ -1,0 +1,18 @@
+{
+  "name": "movie-server",
+  "version": "1.0.0",
+  "description": "Web server with Redis rate limiting and Neo4j database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "simple": "node server-simple.js",
+    "setup": "node setup.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "ws": "^8.14.0",
+    "cors": "^2.8.5",
+    "redis": "^4.6.0",
+    "neo4j-driver": "^5.15.0"
+  }
+}
