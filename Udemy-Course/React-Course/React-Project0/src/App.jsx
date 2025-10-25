@@ -6,8 +6,6 @@ import './App.css'
 import TabButton from './component/TabButton'
 import { useState } from 'react'
 
-import './App.css'
-
 function App() {
   const [tabContent, setTabContent] = useState('')
 
