@@ -1,292 +1,81 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul,
-ol {
-  list-style: none;
-}
-
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a {
-  text-decoration: none;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
-}
-/* === BASE === */
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  color: #0077ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0056cc;
-}
-
-/* === HEADER === */
-.header {
   text-align: center;
-  background: linear-gradient(135deg, #0077ff, #00c4ff);
-  color: white;
-  padding: 4rem 1rem;
+  background-color: #283149;
 }
 
-.header-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
 }
 
-.header-desc {
-  font-size: 1.3rem;
-  opacity: 0.9;
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
 }
 
-/* === ABOUT ME === */
-.about_me {
-  max-width: 900px;
-  margin: 4rem auto;
-  text-align: center;
-  padding: 0 1.5rem;
+.w {
+
 }
 
-.about_me img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.a {
+
 }
 
-.about_me h2 {
-  font-size: 2rem;
-  color: #0077ff;
-  margin-bottom: 1rem;
+.s {
+
 }
 
-.about_me p {
-  font-size: 1.1rem;
-  color: #444;
+.d {
+
 }
 
-/* === SKILLS === */
-.skills {
-  background-color: #fff;
-  padding: 4rem 1rem;
-  text-align: center;
+.j {
+
 }
 
-.skills h2 {
-  font-size: 2rem;
-  color: #0077ff;
-  margin-bottom: 2rem;
+.k {
+
 }
 
-.article-skills {
-  display: inline-block;
-  vertical-align: top;
-  width: 280px;
-  background: #f3f6fa;
-  margin: 1rem;
-  padding: 2rem 1rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.l {
+
 }
 
-.article-skills:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+.set {
+  margin: 10% auto;
 }
 
-.article-skills-image {
-  width: 60px;
-  margin-bottom: 1rem;
-}
-
-.article-skills-title {
-  font-size: 1.3rem;
-  color: #0077ff;
-  margin-bottom: 0.5rem;
-}
-
-.article-skills-desc {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* === CONTACT / ADDITIONAL === */
-.additional {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: #e8f5ff;
-}
-
-.additional-title {
-  font-size: 2rem;
-  color: #0077ff;
-  margin-bottom: 1rem;
-}
-
-.additional-ondertitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.additional-desc {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  color: #444;
-}
-
-.additional-link {
-  display: inline-block;
-  background: #0077ff;
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
-
-.additional-link:hover {
-  background: #005ecc;
-}
-
-/* === FOOTER === */
-.footer {
-  background-color: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 2.5rem 1rem;
-}
-
-.footer-list {
-  list-style: none;
-  margin-bottom: 1.2rem;
-}
-
-.footer-list-item {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.footer-list-link {
-  color: #00c4ff;
-  font-weight: 500;
-}
-
-.footer-list-link:hover {
-  color: #fff;
-}
-
-.footer-desc {
-  font-size: 0.9rem;
+.game-over {
+  background-color: red;
   opacity: 0.8;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .article-skills {
-    width: 90%;
-  }
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
 
-  .header-title {
-    font-size: 2.4rem;
-  }
+.red {
+  color: red;
+}
 
-  .about_me img {
-    width: 140px;
-    height: 140px;
-  }
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
 }
