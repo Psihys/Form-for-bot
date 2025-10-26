@@ -1,0 +1,56 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем стили для списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Сбрасываем стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Сбрасываем стили заголовков и абзацев */
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Сбрасываем стили для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Сбрасываем стили для изображений */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Сбрасываем стили для кнопок и форм */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Для удобного управления шрифтами и line-height */
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
