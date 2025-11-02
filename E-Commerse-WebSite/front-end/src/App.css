@@ -1,13 +1,75 @@
 @import 'tailwindcss';
 
-.app-container {
-  /* width: 100%; */
-  max-width: 1920px;
-  margin: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
+:root {
+  /* Primary Colors */
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --primary-light: #e3f2fd;
   
+  /* Text Colors */
+  --text-primary: #333;
+  --text-secondary: #666;
+  --text-light: #999;
+  --text-white: #fff;
+  
+  /* Background Colors */
+  --bg-primary: #fff;
+  --bg-secondary: #f5f5f5;
+  --bg-dark: #333;
+  --bg-light: #f8f9fa;
+  
+  /* Border Colors */
+  --border-primary: #000;
+  --border-light: #e0e0e0;
+  --border-gray: #ddd;
+  
+  /* Shadow Colors */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  
+  /* Spacing */
+  --spacing-xs: 0.3125rem;  /* 5px */
+  --spacing-sm: 0.625rem;   /* 10px */
+  --spacing-md: 1.25rem;    /* 20px */
+  --spacing-lg: 1.875rem;   /* 30px */
+  --spacing-xl: 3.125rem;   /* 50px */
+  
+  /* Font Sizes */
+  --font-xs: 0.75rem;   /* 12px */
+  --font-sm: 0.875rem;  /* 14px */
+  --font-md: 1rem;      /* 16px */
+  --font-lg: 1.5rem;  /* 18px */
+  --font-xl: 2rem;    /* 24px */
+  --font-xxl: 4.125rem; /* 66px */
+  
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  
+  /* Z-index */
+  --z-dropdown: 1;
+  --z-modal: 100;
+  --z-tooltip: 1000;
+  
+  /* Container Sizes */
+  --container-max: 1920px;
+  --container-lg: 1200px;
+  --container-md: 992px;
+  --container-sm: 768px;
+}
+
+.app-container {
+  max-width: var(--container-max);
+  margin: auto;
 }

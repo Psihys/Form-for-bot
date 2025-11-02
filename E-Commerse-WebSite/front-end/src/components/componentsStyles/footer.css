@@ -1,0 +1,100 @@
+.footer {
+  background-color: var(--bg-primary); /* светлый фон */
+  color: var(--text-primary); /* основной текст тёмный */
+  padding: var(--spacing-lg) var(--spacing-md);
+  font-family: sans-serif;
+
+  /* Центрирование всего контента */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* горизонтальный центр */
+}
+
+.footer a {
+  color: var(--text-primary); /* ссылки тоже тёмные */
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer a:hover {
+  color: var(--primary-color); /* подсветка на hover */
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* горизонтальный центр секций */
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  max-width: var(--container-md);
+  width: 100%;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  flex: 1 1 220px; /* гибкие секции */
+  max-width: 300px;
+  text-align: center; /* выравнивание текста по центру */
+}
+
+.footer-brand h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-brand p {
+  font-size: var(--font-sm);
+  color: var(--text-secondary); /* чуть светлее для описания */
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: var(--font-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover,
+.footer-links a.active {
+  color: var(--primary-color);
+}
+
+.footer-contact p {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-light);
+  padding-top: var(--spacing-md);
+  text-align: center;
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+}

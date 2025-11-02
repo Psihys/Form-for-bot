@@ -1,24 +1,22 @@
 .hero-container {
+  height: auto;
   width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+ 
 
-  
+
 }
 
 .hero-left {
-  height: 500px;
   flex: 1;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-sm);
 }
 
 .hero-left p:first-child {
@@ -32,11 +30,11 @@
   left: -50%;
   width: 40%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--text-primary);
 }
 
 .hero-left h1 {
-    font-size: 66px;
+  font-size: var(--font-xxl);
 }
 
 .hero-left p:last-child {
@@ -50,10 +48,9 @@
   right: -50%;
   width: 40%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--text-primary);
 }
 
 .hero-right {
-  height: 500px;
   flex: 1;
 }

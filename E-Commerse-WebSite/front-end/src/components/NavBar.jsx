@@ -1,14 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/frontend_assets/assets'
 import { NavLink, Link } from 'react-router-dom'
-
-import './componentsStyles/navBar.css'
+import './componentsStyles/NavBar.css'
 
 const NavBar = () => {
-
   return (
     <div className='navigation-container'>
-      <img src={assets.logo} alt='' />
+      <NavLink className='logo' to='/'>
+        {' '}
+        <img src={assets.logo} alt='' />
+      </NavLink>
 
       <ul className='navigation-list'>
         <li>
