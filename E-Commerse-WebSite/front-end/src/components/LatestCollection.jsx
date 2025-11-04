@@ -1,7 +1,5 @@
-import { React } from 'react'
 import Title from './Title'
 import { useContext, useEffect, useState } from 'react'
-import { products } from '../assets/frontend_assets/assets'
 import { ShopContext } from '../context/ShopContext'
 import './componentsStyles/LatestCollection.css'
 import LatestCollectionList from './LatestCollectionList'
