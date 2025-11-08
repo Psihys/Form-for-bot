@@ -1,4 +1,55 @@
-.news-letter-container{
-    width: 100%;
-    max-width: 500px;
+.news-letter__container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg);
+
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+}
+
+.news-letter__container h2 {
+  text-align: center;
+  font-size: var(--font-lg);
+  font-weight: var(--font-bold);
+}
+
+.news-letter__container p {
+  text-align: center;
+  font-size: var(--font-sm);
+  font-weight: var(--font-normal);
+}
+
+.news-letter__form {
+  width: 100%;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.news-letter__form input {
+  padding: 10px;
+  width: 100%;
+
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+}
+
+.news-letter__form button {
+  padding: 10px 15px;
+  cursor: pointer;
+
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
 }

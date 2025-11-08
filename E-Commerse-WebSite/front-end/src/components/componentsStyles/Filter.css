@@ -1,0 +1,35 @@
+.filter-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.filter-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+
+.filter-item label{
+    width: 100%;
+    height: auto;
+
+    padding: 10px 5px;
+
+    border: 1px solid var(--border-primary);
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xs);
+}
+
+.filter-item label:hover{
+
+}
