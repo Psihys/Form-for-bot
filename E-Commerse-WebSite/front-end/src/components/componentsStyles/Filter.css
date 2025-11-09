@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--spacing-md);
+
+
+  box-shadow: 0 4px 8px var(--shadow-medium);
+  border-radius: var(--radius-md);
 }
 
 .filter-item{

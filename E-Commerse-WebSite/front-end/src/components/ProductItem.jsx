@@ -7,7 +7,7 @@ const ProductItem = ({products, currency}) => {
       {' '}
       {products.map((product) => (
         <Link
-          to={`/product/${product.id}`}
+          to={`/product/${product._id}`}
           className='product-card'
           key={product.id}
         >

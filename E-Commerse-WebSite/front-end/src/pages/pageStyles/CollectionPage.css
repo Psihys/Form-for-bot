@@ -2,12 +2,14 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: var(--spacing-md);
+  
 }
 
 .collection__filter {
   width: 100%;
   max-width: 200px;
+ 
 }
 
 .collection__products-container {
