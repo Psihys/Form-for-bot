@@ -1,0 +1,94 @@
+.note-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+}
+
+.note-card {
+  width: 100%;
+  max-width: 32%;
+  min-height: 150px;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.note-card-content {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.note-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.note-card-text {
+  margin: 0;
+  color: #666;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.note-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.note-card-date p {
+  font-size: 0.8rem;
+  color: #999;
+  margin: 0;
+}
+
+.note-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.note-card-button,
+.note-card-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.note-card-button:hover,
+.note-card-link:hover {
+  background-color: #f0f0f0;
+}
+
+.note-card-button svg,
+.note-card-link svg {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.note-card-button:hover svg,
+.note-card-link:hover svg {
+  color: #333;
+}

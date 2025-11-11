@@ -1,8 +1,0 @@
-.home-container {
-  max-width: var(--container-max);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}

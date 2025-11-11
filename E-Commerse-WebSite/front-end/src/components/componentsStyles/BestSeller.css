@@ -1,8 +1,0 @@
-.bestseller-container {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
