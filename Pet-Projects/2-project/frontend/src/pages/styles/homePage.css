@@ -1,0 +1,33 @@
+/* Родительский блок */
+.home-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Flex-контейнер для сайдбара и чата */
+.chat-wrapper {
+  display: flex;
+  flex: 1;
+
+}
+
+/* Sidebar (левая панель) */
+.sidebar {
+  width: 250px; /* фиксированная ширина */
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Правая панель — чат */
+.chat-content {
+  flex: 1; /* занимает оставшееся пространство */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
